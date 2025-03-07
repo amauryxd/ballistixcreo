@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    void Start()
+    {
+        ActivarPlayers(PlayerManagerSingleton.Instance.wichToActivate);
+    }
 
     void OnEnable()
     {
@@ -53,6 +57,20 @@ public class GameManager : MonoBehaviour
             if(wichPly != 1)
             Enemys[wichPly-2].SetActive(false);
             paredes[wichPly-1].SetActive(true);
+        }
+    }
+    void ActivarPlayers(int many){
+        if(many>=4){
+            Enemys[2].SetActive(false);
+            ActivePlys[3].SetActive(true);
+        }
+        if(many>=3){
+            Enemys[1].SetActive(false);
+            ActivePlys[2].SetActive(true);
+        }
+        if(many>=2){
+            Enemys[0].SetActive(false);
+            ActivePlys[1].SetActive(true);
         }
     }
 }

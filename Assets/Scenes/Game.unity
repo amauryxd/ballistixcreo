@@ -207,7 +207,7 @@ MonoBehaviour:
   - {fileID: 1630098066}
   - {fileID: 772791893}
   - {fileID: 56895688}
-  vidaPlys: 04000000040000000400000004000000
+  vidaPlys: 0a0000000a0000000a0000000a000000
   paredes:
   - {fileID: 1873218403}
   - {fileID: 1623375522}
@@ -2616,6 +2616,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
+      propertyPath: segments
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
       propertyPath: enemyWich
       value: 1
       objectReference: {fileID: 0}
@@ -3379,6 +3383,10 @@ PrefabInstance:
     - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
       propertyPath: distance
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
+      propertyPath: segments
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
       propertyPath: enemyWich
@@ -4255,6 +4263,10 @@ PrefabInstance:
     - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
       propertyPath: distance
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124438572157324147, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
+      propertyPath: segments
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8779036268052288089, guid: 5e407e9be0692f34c820b0040fc4ea92, type: 3}
       propertyPath: m_LocalPosition.x
