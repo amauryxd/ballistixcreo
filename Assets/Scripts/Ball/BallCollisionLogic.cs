@@ -24,7 +24,7 @@ public class BallCollisionLogic : MonoBehaviour
     {
         float speed = velocity.magnitude;
         Vector3 direction = Vector3.Reflect(velocity.normalized, collision.contacts[0].normal);
-        rb.velocity = direction * speed;
+        rb.velocity = direction * ballSpeed;
     }
 
 }
