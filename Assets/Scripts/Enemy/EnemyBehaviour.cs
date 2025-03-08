@@ -34,16 +34,12 @@ public class EnemyBehaviour : EnemyMovement
         {
             float angle = startAngle + (i * angleStep);
             Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), 0, Mathf.Sin(angle * Mathf.Deg2Rad));
-            Vector3 origin = transform.position+new Vector3(0,0.5f,0);
+            Vector3 origin = transform.position+new Vector3(0,1f,0);
 
             RaycastHit hit;
             if (Physics.Raycast(origin, direction, out hit, distance, layerMask))
             {
                 SelectEnemyToMove(-1);
-            }
-            else
-            {
-                Vector3 endPoint = origin + direction * distance;
             }
         }
     }
@@ -57,17 +53,14 @@ public class EnemyBehaviour : EnemyMovement
         {
             float angle = startAngle + (i * angleStep);
             Vector3 direction = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), 0, Mathf.Sin(angle * Mathf.Deg2Rad));
-            Vector3 origin = transform.position+new Vector3(0,0.5f,0);
+            Vector3 origin = transform.position+new Vector3(0,1f,0);
 
             RaycastHit hit;
             if (Physics.Raycast(origin, direction, out hit, distance, layerMask))
             {
                 SelectEnemyToMove(1);
             }
-            else
-            {
-                Vector3 endPoint = origin + direction * distance;
-            }
+
         }
     }
 }

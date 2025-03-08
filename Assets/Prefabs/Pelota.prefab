@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6169845354815871520}
   - component: {fileID: 806693116025697224}
   - component: {fileID: 5173533672081187445}
-  - component: {fileID: 5892479413399198605}
+  - component: {fileID: 8349249838069096763}
   m_Layer: 6
   m_Name: Pelota
   m_TagString: Ball
@@ -93,7 +93,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3556834339707211515}
-  m_Material: {fileID: 13400000, guid: a70c517bd01fc024bb2335463fbe7163, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -115,9 +115,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3556834339707211515}
   serializedVersion: 4
-  m_Mass: 15
+  m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -129,12 +129,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 2
---- !u!114 &5892479413399198605
+  m_Interpolate: 1
+  m_Constraints: 4
+  m_CollisionDetection: 1
+--- !u!114 &8349249838069096763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3556834339707211515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c571957d0dc32418736da2ff6be32e, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f4980575e57644bba95030a8f7434a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  velocity: {x: 0, y: 0, z: 0}
+  ballSpeed: 12

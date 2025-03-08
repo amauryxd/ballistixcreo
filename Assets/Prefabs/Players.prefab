@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNums: 0
-  speed: 7
+  speed: 8
 --- !u!54 &4032289260930545846
 Rigidbody:
   m_ObjectHideFlags: 0
