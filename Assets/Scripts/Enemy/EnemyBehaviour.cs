@@ -39,13 +39,11 @@ public class EnemyBehaviour : EnemyMovement
             RaycastHit hit;
             if (Physics.Raycast(origin, direction, out hit, distance, layerMask))
             {
-                //Debug.DrawLine(origin, hit.point, Color.red, 2f); 
                 SelectEnemyToMove(-1);
             }
             else
             {
                 Vector3 endPoint = origin + direction * distance;
-                //Debug.DrawLine(origin, endPoint, Color.green, 2f); 
             }
         }
     }
@@ -64,13 +62,11 @@ public class EnemyBehaviour : EnemyMovement
             RaycastHit hit;
             if (Physics.Raycast(origin, direction, out hit, distance, layerMask))
             {
-                //Debug.DrawLine(origin, hit.point, Color.red, 2f);
                 SelectEnemyToMove(1);
             }
             else
             {
                 Vector3 endPoint = origin + direction * distance;
-                //Debug.DrawLine(origin, endPoint, Color.green, 2f);
             }
         }
     }

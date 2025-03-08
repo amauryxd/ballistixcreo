@@ -15,7 +15,7 @@ public class BallsInstanceManager : BallsPoolInstance
     }
 
     public IEnumerator WaitBallSapwn(){
-        while(true){
+        while(GameManager.playTime){
             int randIndex;
             randIndex = Random.Range(0, spawnGameObjects.Count);
             GameObject actualBall = AskForBall();

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8898443045136247471
+--- !u!1 &135594284622529730
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8779036268052288089}
-  - component: {fileID: 7249512351370321532}
-  - component: {fileID: 2345324708336148471}
-  - component: {fileID: 6124438572157324147}
-  - component: {fileID: 310344574266252007}
-  - component: {fileID: 6685286857323993282}
+  - component: {fileID: 2615564473749802685}
+  - component: {fileID: 8989986471393184670}
+  - component: {fileID: 6102280348501001067}
+  - component: {fileID: 2801126429852344155}
+  - component: {fileID: 4032289260930545846}
+  - component: {fileID: 8031240616772442947}
   m_Layer: 0
-  m_Name: Enemy 2
+  m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8779036268052288089
+--- !u!4 &2615564473749802685
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -7.14, y: 1.25, z: -0.11}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.09, y: -0.4, z: -6.99}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7249512351370321532
+--- !u!33 &8989986471393184670
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   m_Mesh: {fileID: 289301614986012343, guid: f53382e0b1bb8334fb54a780e540b2f5, type: 3}
---- !u!23 &2345324708336148471
+--- !u!23 &6102280348501001067
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,32 +86,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6124438572157324147
+--- !u!114 &2801126429852344155
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f212c986977e34408161467bcc166f8, type: 3}
+  m_Script: {fileID: 11500000, guid: fbe704290e219cb4abcb904da7c3948c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyWich: 0
+  playerNums: 0
   speed: 7
-  distance: 8
-  segments: 20
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!54 &310344574266252007
+--- !u!54 &4032289260930545846
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -132,13 +127,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &6685286857323993282
+--- !u!65 &8031240616772442947
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898443045136247471}
+  m_GameObject: {fileID: 135594284622529730}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -152,4 +147,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.019021157, y: 0.019999994, z: 0.009999998}
-  m_Center: {x: 0, y: 0, z: 0.004999999}
+  m_Center: {x: 1.7462298e-10, y: 0, z: 0.0049999994}
